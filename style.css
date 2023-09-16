@@ -1,0 +1,394 @@
+body {
+    /* font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;*/
+    min-height: 1000px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #111;
+    font-weight: 300;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/img/bg.jpg);
+    background-size: cover;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #f24;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.4s ease;
+    border-radius: 5px;
+    /* font-weight: 600; */
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+
+/* header section start */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header.sticky a.logo {
+    color: #111;
+}
+
+header .logo span {
+    color: #f24;
+}
+
+header .nev {
+    position: relative;
+    display: flex;
+}
+
+header .nev li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .nev li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky li a {
+    color: #111;
+}
+
+header li a:hover {
+    color: #f24;
+}
+
+section {
+    padding: 100px;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row .col-md-6 {
+    position: relative;
+    width: 48%;
+}
+
+.titletext {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titletext span {
+    font-size: 1.5em;
+    color: #f24;
+    font-weight: 700;
+}
+
+.col-md-6 p {
+    line-height: 25px;
+}
+
+.row .col-md-6 .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col-md-6 .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.menu .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+.expart .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.expart .content .box {
+    width: 250px;
+    margin: 15px;
+}
+
+.expart .content .box .img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.expart .content .box .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expart .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.expart .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+.testimonials {
+    background: url(assets/img/bg2.jpg);
+    background-size: cover;
+}
+
+.write .titletext,
+.write p {
+    color: #fff;
+}
+
+.testimonials .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.testimonials .content .box {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.testimonials .content .box .img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonials .content .box .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .content .box .text {
+    text-align: center;
+}
+
+.testimonials .content .box p {
+    font-style: italic;
+    color: #666;
+    line-height: 25px;
+}
+
+.testimonials .content .box .text h3 {
+    font-size: 1em;
+    color: #f24;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.contact {
+    background: url(assets/img/bg3.jpg);
+    background-size: cover;
+}
+
+.contactfrom {
+    padding: 70px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgb(0 0 0 / 10%);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactfrom h2 {
+    margin-bottom: 20px;
+    color: #111;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.contactfrom .inputbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactfrom .inputbox input,
+.contactfrom .inputbox textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #555;
+    font-weight: 300;
+    color: #111;
+    resize: none;
+}
+
+.contactfrom .inputbox input[type="submit"] {
+    font-size: 1em;
+    display: inline-block;
+    color: #fff;
+    background-color: #f23;
+    border: none;
+    max-width: 100px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.copyrightarea {
+    padding: 12px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.copyrightarea p {
+    color: #555;
+}
+
+.copyrightarea a {
+    color: #f23;
+    text-decoration: none;
+    font-weight: 600;
+}
